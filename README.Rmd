@@ -33,7 +33,7 @@ After installing the package, you can attach the package by running
 library("LTable")
 ```
 
-The "rules of the game" is that,
+The "rules of the game" are,
 
 * you input matrices, data.frames, or lists of matrices and data.frames into "...",
 * the elements in "..." will be binded by row,

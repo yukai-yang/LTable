@@ -24,7 +24,7 @@ After installing the package, you can attach the package by running
 library("LTable")
 ```
 
-The "rules of the game" is that,
+The "rules of the game" are,
 
 -   you input matrices, data.frames, or lists of matrices and data.frames into "...",
 -   the elements in "..." will be binded by row,
@@ -55,11 +55,11 @@ LTable(y,caption="Hello!",list(round(x,2),z),label="tab:hi",indent=TRUE)
 #>     \hline
 #>      d & 4 &  &  &  &  &  &  \\
 #>     \hline
-#>      1.28 & 0.33 & -1.06 & 0 & 0 & 0 & 0 & 0 \\
+#>      -1.93 & -0.3 & 1.13 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      0.02 & 0.79 & -0.29 & 0 & 0 & 0 & 0 & 0 \\
+#>      -0.47 & 0.37 & 0.76 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      0.12 & 0.34 & 0.06 &  &  &  &  &  \\
+#>      1.3 & 1.23 & -1.21 &  &  &  &  &  \\
 #>     \hline
 #>     \hline
 #>   \end{tabular}
