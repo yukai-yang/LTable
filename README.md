@@ -2,7 +2,7 @@
 LTable (1.0.0)
 ==============
 
-This package is developed for those who wanna make quick LaTeX code for tables from the results obtained in R environment.
+This package is developed for those who wanna make quick LaTeX code for tables from the results obtained in R environment. There is only one function in the package, "LTable" which is also the package name.
 
 How to install
 --------------
@@ -55,11 +55,11 @@ LTable(y,caption="Hello!",list(round(x,2),z),label="tab:hi",indent=TRUE)
 #>     \hline
 #>      d & 4 &  &  &  &  &  &  \\
 #>     \hline
-#>      0.85 & -0.39 & 1.86 & 0 & 0 & 0 & 0 & 0 \\
+#>      1.28 & 0.33 & -1.06 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      -0.13 & -0.39 & 0.36 & 0 & 0 & 0 & 0 & 0 \\
+#>      0.02 & 0.79 & -0.29 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      -0.41 & 0.83 & -1.63 &  &  &  &  &  \\
+#>      0.12 & 0.34 & 0.06 &  &  &  &  &  \\
 #>     \hline
 #>     \hline
 #>   \end{tabular}

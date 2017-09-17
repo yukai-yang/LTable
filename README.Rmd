@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 
 # LTable (1.0.0)
 
-This package is developed for those who wanna make quick LaTeX code for tables from the results obtained in R environment.
+This package is developed for those who wanna make quick LaTeX code for tables from the results obtained in R environment. There is only one function in the package, "LTable" which is also the package name.
 
 ## How to install
 
