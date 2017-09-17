@@ -1,32 +1,46 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-LTable
-======
+LTable (1.0.0)
+==============
 
 This package is developed for those who wanna make quick LaTeX code for tables from the results obtained in R environment.
 
-Example
--------
+How to install
+--------------
 
-You install the package by running
+You can install the package from my repo on GitHub by running
 
 ``` r
 devtools::install_github("yukai-yang/LTable")
 ```
 
-and attach the package by running
+provided that the package "devtools" has been installed beforehand.
+
+Example
+-------
+
+After installing the package, you can attach the package by running
 
 ``` r
 library("LTable")
 ```
 
-The "rules of the game" is that, you input matrices, data.frames, or lists of matrices and data.frames into "...", elements in "..." will be binded by row, and if the element is a list, then its elements will be binded by column.
+The "rules of the game" is that,
 
-In the following, there is a basic example which shows you how to write prompt LaTeX based on R objects:
+-   you input matrices, data.frames, or lists of matrices and data.frames into "...",
+-   the elements in "..." will be binded by row,
+-   and if the element is a list, then its elements will be binded by column.
+
+In the following, an example is offered, showing you how to write prompt LaTeX table code based on R objects:
 
 ``` r
 x = matrix(rnorm(9),3,3)
 y = data.frame(a=c('a','b','c','d'),b=1:4)
 z = matrix(0,2,5)
+```
+
+The three R objects are: a matrix (x), a data.frame (y), and a matrix (z). Then we run the "LTable" function:
+
+``` r
 LTable(y,caption="Hello!",list(round(x,2),z),label="tab:hi",indent=TRUE)
 #> \begin{table}
 #>   \centering
@@ -41,11 +55,11 @@ LTable(y,caption="Hello!",list(round(x,2),z),label="tab:hi",indent=TRUE)
 #>     \hline
 #>      d & 4 &  &  &  &  &  &  \\
 #>     \hline
-#>      -1.66 & 0.08 & -1.93 & 0 & 0 & 0 & 0 & 0 \\
+#>      0.85 & -0.39 & 1.86 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      0.02 & -0.55 & 0.25 & 0 & 0 & 0 & 0 & 0 \\
+#>      -0.13 & -0.39 & 0.36 & 0 & 0 & 0 & 0 & 0 \\
 #>     \hline
-#>      0.35 & 0.77 & 0.56 &  &  &  &  &  \\
+#>      -0.41 & 0.83 & -1.63 &  &  &  &  &  \\
 #>     \hline
 #>     \hline
 #>   \end{tabular}
@@ -53,3 +67,5 @@ LTable(y,caption="Hello!",list(round(x,2),z),label="tab:hi",indent=TRUE)
 #>   \label{tab:hi}
 #> \end{table}
 ```
+
+LaTeX code done!
